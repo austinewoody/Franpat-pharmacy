@@ -1,0 +1,160 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  header {
+    background: #0077b6;
+    color: #fff;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+  
+  header .logo img {
+    max-width: 100px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .head h1{
+    font-size: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(255, 21, 0);
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('home_image.jpg') no-repeat center center/cover;
+    text-align: center;
+    padding: 5rem 2rem;
+  }
+  
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+  
+  .hero .btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Sections */
+  section {
+    padding: 2rem;
+  }
+  
+  .about, .services, .products {
+    text-align: center;
+  }
+
+  footer{
+    text-align: center;
+  }
+
+ /* About Us */
+ .image1{
+    width: 500px;
+    height: 500px;
+ }
+
+ .image2{
+    margin-left: 250px;
+ }
+
+ .image{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+ }
+
+/* Contact */
+
+.contacts{
+    margin-left: 600px;
+}
+
+.contact input{
+    width: 250px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.contact textarea{
+    width: 250px;
+    height: 80px;
+}
+
+.contact button{
+    height: 30px;
+    background: #ff6b6b;
+    color: white;
+    border-radius: 3px;
+    border: thin solid #ff6b6b;
+}
+
+iframe{
+    margin-left: 500px;
+}
+  
+  /* Services Section */
+  .service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .card {
+    background: #ff6b6b;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: white;
+  }
+
+  .card:hover{
+    transform: scale(1.1);
+  }
+
+  .card img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+  }
+
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .service-cards, .product-gallery {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1rem;
+    }
+}
